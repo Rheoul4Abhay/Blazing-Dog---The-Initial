@@ -18,7 +18,7 @@ export default class Player{
         this.gameSpeed = 0;
         this.maxSpeed = 10;
         this.maxFrame = 0;
-        this.fps = 30;
+        this.fps = 5;
         this.frameTimer = 0;
         this.frameInterval = 1000/this.fps;
         this.vy = 0;
