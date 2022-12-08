@@ -45,7 +45,8 @@ export default class Player{
         this.currentState.enter();
     }
     update(deltaTime){
-        this.x += this.speed;
+     if(this.frameTimer > this.frameInterval){
+                      this.x += this.speed;
         
         this.y += this.vy;
         if(!this.isGrounded()){
@@ -56,6 +57,10 @@ export default class Player{
         }
         if(this.x < 0) this.x = 0;
         else if(this.x >= this.gameWidth - this.width) this.x = this.gameWidth - this.width;
+     }
+    else{
+        this.frameTimer += this.deltaTime;
+    }
 }
     isGrounded(){
         return this.y >= this.gameHeight - this.height - this.groundMargin
