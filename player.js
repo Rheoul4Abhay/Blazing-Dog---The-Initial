@@ -2,7 +2,7 @@ import { StandingRight,StandingLeft,RunningRight,RunningLeft,SittingRight,Sittin
          
 export default class Player{
     constructor(gameWidth,gameHeight){
-        this.groundMargin = 75;
+        this.groundMargin = 65;
         this.gameWidth = gameWidth;
         this.gameHeight = gameHeight;
         this.image = document.getElementById('playerImage');
