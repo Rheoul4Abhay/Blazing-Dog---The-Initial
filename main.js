@@ -1,7 +1,7 @@
 import Player from './player.js';
 import InputHandler from './input.js';
 import Layer from './background.js';
-//import Enemy from './enemy.js';
+import Enemy from './enemy.js';
 window.addEventListener('load',function(){
     const loading = document.getElementById('loading');
     loading.style.display = 'none';
