@@ -4,7 +4,7 @@ export default class Player{
     constructor(gameWidth,gameHeight){
         this.gameWidth = gameWidth;
         this.gameHeight = gameHeight;
-        this.groundMargin = 65;
+        this.groundMargin = 60;
         this.image = document.getElementById('playerImage');
         this.width = 200;
         this.height = 181.83;
