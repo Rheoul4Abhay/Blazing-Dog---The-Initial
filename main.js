@@ -61,7 +61,7 @@ window.addEventListener('load',function(){
         ctx.clearRect(0,0,canvas.width,canvas.height);
         const deltaTime = timeStamp - lastTime;
         lastTime = timeStamp;
-        player.update();
+        player.update(deltaTime);
          layers.forEach((object) => {
              object.draw(ctx);
              object.update(player.gameSpeed);
