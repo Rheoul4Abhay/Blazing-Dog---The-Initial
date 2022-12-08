@@ -61,6 +61,7 @@ export default class Player{
        else{
         this.frameTimer += this.deltaTime;
     }
+    }
     isGrounded(){
         return this.y >= this.gameHeight - this.height - this.groundMargin
     }
