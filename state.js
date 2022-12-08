@@ -163,7 +163,7 @@ export class JumpingRight extends State{
   enter(){
     this.player.weight = 1;
     this.player.frameY = 2;
-    this.player.vy = -30;
+    this.player.vy = -20;
     this.player.speed = this.player.maxSpeed/2;
   }
   handleInput(input){
@@ -182,7 +182,7 @@ export class JumpingLeft extends State{
   enter(){
     this.player.weight = 1;
     this.player.frameY = 3;
-    this.player.vy = -30;
+    this.player.vy = -20;
     this.player.speed = -this.player.maxSpeed/2;
   }
   handleInput(input){
