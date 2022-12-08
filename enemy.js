@@ -9,7 +9,7 @@ export default class Enemy {
     this.x = this.gameWidth;
     this.y = this.gameHeight - this.height - this.groundMargin;
     this.frameX = 0;
-    this.speedX = 4;
+    this.speedX = 10;
     this.maxFrame = 5;
     this.fps = 10;
     this.frameTimer = 0;
