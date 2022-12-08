@@ -45,7 +45,7 @@ export default class Player{
         this.currentState.enter();
     }
     update(deltaTime){
-     if(this.frameTimer > (this.frameInterval/60)){
+     if(this.frameTimer > (this.frameInterval/30)){
         this.x += this.speed;
         this.y += this.vy;
         if(!this.isGrounded()){
