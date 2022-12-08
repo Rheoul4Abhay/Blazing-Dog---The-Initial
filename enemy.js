@@ -2,7 +2,7 @@ export default class Enemy {
   constructor(gameWidth, gameHeight) {
     this.gameWidth = gameWidth;
     this.gameHeight = gameHeight;
-    this.groundMargin = 83;
+    this.groundMargin = 65;
     this.image = document.getElementById("enemy1");
     this.width = 160;
     this.height = 119;
