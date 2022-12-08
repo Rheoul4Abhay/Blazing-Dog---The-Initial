@@ -59,7 +59,7 @@ export default class Player{
         else if(this.x >= this.gameWidth - this.width) this.x = this.gameWidth - this.width;
      }
     else{
-        this.frameTimer += this.deltaTime;
+        this.frameTimer += deltaTime;
     }
 }
     isGrounded(){
