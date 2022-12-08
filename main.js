@@ -62,11 +62,11 @@ window.addEventListener('load',function(){
         const deltaTime = timeStamp - lastTime;
         lastTime = timeStamp;
         player.update();
-        // layers.forEach((object) => {
-        //     object.draw(ctx);
-        //     object.update(player.gameSpeed);
-        // });
-        //handleEnemies(deltaTime);
+         layers.forEach((object) => {
+             object.draw(ctx);
+             object.update(player.gameSpeed);
+        });
+        handleEnemies(deltaTime);
         player.draw(ctx,deltaTime);
         player.currentState.handleInput(input.currentKey);
         requestAnimationFrame(animate);
