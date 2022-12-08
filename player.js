@@ -2,14 +2,13 @@ import { StandingRight,StandingLeft,RunningRight,RunningLeft,SittingRight,Sittin
          
 export default class Player{
     constructor(gameWidth,gameHeight){
-        this.groundMargin = 5;
         this.gameWidth = gameWidth;
         this.gameHeight = gameHeight;
         this.image = document.getElementById('playerImage');
         this.width = 200;
         this.height = 181.83;
         this.x = this.gameWidth/8;
-        this.y = this.gameHeight - this.height - this.groundMargin;
+        this.y = this.gameHeight - this.height;
         this.state = [new StandingRight(this),new StandingLeft(this),new RunningRight(this),new RunningLeft(this),new SittingRight(this),new SittingLeft(this),new RollingRight(this),new RollingLeft(this),new JumpingRight(this),new JumpingLeft(this),new FallingRight(this),new FallingLeft(this)];
         this.currentState = this.state[0];
         this.frameX = 0;
